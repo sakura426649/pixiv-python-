@@ -1,3 +1,6 @@
+### 用前须知
+想要爬取pixiv的图片需要魔法上网(懂得都懂)
+
 ```python
 import re
 import time

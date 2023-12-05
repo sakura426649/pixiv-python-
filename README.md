@@ -127,7 +127,7 @@ elif user_input == 3:
         path = str(DL_URL).split('/')[-1]
         print(f"图片{path}开始下载(第{cnt + 1}张)")
         pic = requests.get(DL_URL, headers=headers, verify=False, timeout=5)
-        with open(f"./{path}", mode='wb') as f:
+        with open(f"./image/{path}", mode='wb') as f:
             f.write(pic.content)
             f.close()
             print(f"第{cnt + 1}图片下载成功!")

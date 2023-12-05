@@ -69,6 +69,7 @@ def download(result,count,n):
         # ./代表从当前目录,image是当前目录的image文件夹,image{n}_{count}.{type}是图片的名称,其中{type}是文件类型(jpg/png),可根据需求自行修改
         with open(f'./image/image{n}_{count}.{type}', mode='wb') as f:
             f.write(finalresult.content)
+            f.close()
             print(f"图片{count}已下载成功！！\n")
 
 
